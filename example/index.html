@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <!-- <script type="module" src="../dist/console-tag.bundle.js"></script> -->
+</header>
+
+<body>
+    <script type="module">
+        import consoleTag from '/dist/console-tag.bundle.js';
+        consoleTag.install({
+            tag: {
+                'test': {
+                    tag: {
+                        name: '[test-tag]',
+                        style: 'color:white;background-color:#ecad9e;border-radius:4px;padding:2px 4px;font-size:12px;'
+                    },
+                    hook: () => {
+                        console.log("I am a hook")
+                    }
+                }
+            }
+        });
+        console.test('tag sth')
+    </script>
+</body>
+
+</html>
