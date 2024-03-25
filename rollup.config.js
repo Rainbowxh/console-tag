@@ -3,7 +3,7 @@
 const pkg = require('./package.json')
 const typescript = require('@rollup/plugin-typescript')
 const resolve = require("@rollup/plugin-node-resolve")
-const {terser} = require("rollup-plugin-terser")
+const { terser } = require("rollup-plugin-terser")
 
 module.exports =  {
 	input: './src/index.ts',
@@ -14,6 +14,6 @@ module.exports =  {
     plugins: [
 		typescript(), // 
 		resolve(), // deal resolve
-		// terser()
+		terser()
 	]
 };
