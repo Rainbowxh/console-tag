@@ -53,7 +53,7 @@ install(config)
 ```
 |  params        |  type        |   required |  description |
 |  ----          |  ---        | ----          |  ---- |
-| enable | boolean | false | Whether the custom function is valid, it will take effect when the value is false, and supports configuration according to the environment.Example: dev debugging environment takes effect, production effect |
+| enable | boolean | false | It will take effect when the value is false, and supports configuration according to the environment.Example: dev debugging environment takes effect, production not `install({ enable: env === 'dev' ? true : false })` |
 | tag | Object | true | Config commands what you want|
 | &emsp;'customName'  | Object | true | 'customName' is the command u want. `console[customName]` | 
 | &emsp;&emsp;tag | Object  | true | Tag style config | 
